@@ -24,7 +24,7 @@ class ConversionViewController: UIViewController {
 //        firstView.addSubview(secondView)
         
         
-        print("ConversionViewController loaded its view")
+//        print("ConversionViewController loaded its view")
         
     }
 

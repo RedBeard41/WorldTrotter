@@ -23,28 +23,30 @@ class MapViewController: UIViewController {
         
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(segmentedControl)
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("MapViewController loaded its view")
+//        print("MapViewController loaded its view")
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("MapViewController will appear")
+//        print("MapViewController will appear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("MapViewController did appear")
+//        print("MapViewController did appear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("MapViewController will disappear")
+//        print("MapViewController will disappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        print("MapViewController did disappear")
+//        print("MapViewController did disappear")
     }
     
     
