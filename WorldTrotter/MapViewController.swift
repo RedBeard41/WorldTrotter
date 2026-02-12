@@ -16,6 +16,13 @@ class MapViewController: UIViewController {
     override func loadView() {
         mapView = MKMapView()
         view = mapView
+        
+        let segmentedControl = UISegmentedControl(items: ["Standard", "Satellite", "Hybrid"])
+        segmentedControl.backgroundColor = UIColor.systemBackground
+        segmentedControl.selectedSegmentIndex = 0
+        
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(segmentedControl)
     }
     
     override func viewDidLoad() {
