@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConversionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,8 @@ class ViewController: UIViewController {
 //        secondView.backgroundColor = .green
 //        firstView.addSubview(secondView)
         
+        
+        print("ConversionViewController loaded its view")
         
     }
 

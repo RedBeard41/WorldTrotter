@@ -11,7 +11,7 @@
         <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +63,7 @@
                             <constraint firstItem="Uub-SC-D8l" firstAttribute="top" secondItem="XlF-ad-LNg" secondAttribute="bottom" constant="8" id="p8y-Ss-rwd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Convert" image="thermometer.medium" catalog="system" id="CcT-Jp-eNS"/>
+                    <tabBarItem key="tabBarItem" title="Convert" image="thermometer" catalog="system" id="CcT-Jp-eNS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,8 +72,8 @@
         <!--Map-->
         <scene sceneID="qdc-bW-1Cw">
             <objects>
-                <viewController id="B44-uJ-unM" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Tsb-iB-Jbi">
+                <viewController id="B44-uJ-unM" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wIN-TZ-l5s">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <standardMapConfiguration key="preferredConfiguration"/>
@@ -95,8 +95,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="B44-uJ-unM" kind="relationship" relationship="viewControllers" id="d04-J0-1x3"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Bsx-of-yNk"/>
+                        <segue destination="B44-uJ-unM" kind="relationship" relationship="viewControllers" id="d04-J0-1x3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myQ-T7-dEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,6 +106,6 @@
     </scenes>
     <resources>
         <image name="map" catalog="system" width="128" height="112"/>
-        <image name="thermometer.medium" catalog="system" width="80" height="128"/>
+        <image name="thermometer" catalog="system" width="80" height="128"/>
     </resources>
 </document>
