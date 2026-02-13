@@ -28,6 +28,7 @@ class ConversionViewController: UIViewController {
         tempFahrenheitLabel.textColor = customColor
         tempFahrenheitLabel.font = UIFont.systemFont(ofSize: largeFontSize)
         tempFahrenheitLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tempFahrenheitLabel)
         
         
         let fLabel = UILabel()
@@ -35,24 +36,28 @@ class ConversionViewController: UIViewController {
         fLabel.textColor = customColor
         fLabel.font = UIFont.systemFont(ofSize: smallFontSize)
         fLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(fLabel)
         
         let compareLabel = UILabel()
         compareLabel.text = "is equal to"
         compareLabel.textColor = .black
         compareLabel.font = UIFont.systemFont(ofSize: smallFontSize)
         compareLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(compareLabel)
         
         let tempCelsiusLabel = UILabel()
         tempCelsiusLabel.text = "100"
         tempCelsiusLabel.textColor = customColor
         tempCelsiusLabel.font = UIFont.systemFont(ofSize: largeFontSize)
         tempCelsiusLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tempCelsiusLabel)
         
         let cLabel = UILabel()
         cLabel.text = "degrees Celsius"
         cLabel.textColor = customColor
         cLabel.font = UIFont.systemFont(ofSize: smallFontSize)
         cLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(cLabel)
         
         
         
