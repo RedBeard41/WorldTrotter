@@ -37,6 +37,19 @@ class MapViewController: UIViewController {
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
         
+        let pointInterest = UILabel()
+        
+        pointInterest.text = "Points of Interest"
+        pointInterest.textColor = .black
+        pointInterest.font = UIFont.boldSystemFont(ofSize: 18)
+        
+        pointInterest.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(pointInterest)
+        
+        pointInterest.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        pointInterest.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20).isActive = true
+        
 
     }
     
