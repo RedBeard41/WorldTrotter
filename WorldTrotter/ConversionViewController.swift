@@ -21,6 +21,7 @@ class ConversionViewController: UIViewController {
         let customColor = UIColor(red: 225/255, green: 88/255, blue: 41/255, alpha: 1)
         let largeFontSize = CGFloat(70)
         let smallFontSize = CGFloat(30)
+        let margins = view.layoutMarginsGuide
         
         
         let tempFahrenheitLabel = UILabel()
@@ -30,6 +31,9 @@ class ConversionViewController: UIViewController {
         tempFahrenheitLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tempFahrenheitLabel)
         
+        tempFahrenheitLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8).isActive = true
+        tempFahrenheitLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
+        
         
         let fLabel = UILabel()
         fLabel.text = "degrees Fahrenheit"
@@ -38,12 +42,18 @@ class ConversionViewController: UIViewController {
         fLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(fLabel)
         
+        fLabel.topAnchor.constraint(equalTo: tempFahrenheitLabel.bottomAnchor, constant: 8).isActive = true
+        fLabel.centerXAnchor.constraint(equalTo: tempFahrenheitLabel.centerXAnchor).isActive = true
+        
         let compareLabel = UILabel()
         compareLabel.text = "is equal to"
         compareLabel.textColor = .black
         compareLabel.font = UIFont.systemFont(ofSize: smallFontSize)
         compareLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(compareLabel)
+        
+        compareLabel.topAnchor.constraint(equalTo: fLabel.bottomAnchor, constant: 8).isActive = true
+        compareLabel.centerXAnchor.constraint(equalTo: tempFahrenheitLabel.centerXAnchor).isActive = true
         
         let tempCelsiusLabel = UILabel()
         tempCelsiusLabel.text = "100"
@@ -52,12 +62,18 @@ class ConversionViewController: UIViewController {
         tempCelsiusLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tempCelsiusLabel)
         
+        tempCelsiusLabel.topAnchor.constraint(equalTo: compareLabel.bottomAnchor, constant: 8).isActive = true
+        tempCelsiusLabel.centerXAnchor.constraint(equalTo: tempFahrenheitLabel.centerXAnchor).isActive = true
+        
         let cLabel = UILabel()
         cLabel.text = "degrees Celsius"
         cLabel.textColor = customColor
         cLabel.font = UIFont.systemFont(ofSize: smallFontSize)
         cLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(cLabel)
+        
+        cLabel.topAnchor.constraint(equalTo: tempCelsiusLabel.bottomAnchor, constant: 8).isActive = true
+        cLabel.centerXAnchor.constraint(equalTo: tempFahrenheitLabel.centerXAnchor).isActive = true
         
         
         
