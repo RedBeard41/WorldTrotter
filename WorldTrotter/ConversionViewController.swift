@@ -8,6 +8,8 @@
 import UIKit
 
 class ConversionViewController: UIViewController {
+    
+    @IBOutlet var celsiusLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,11 @@ class ConversionViewController: UIViewController {
         
         
 //        print("ConversionViewController loaded its view")
+        
+    }
+    
+    @IBAction func fahrenheitFieldEditingChanged(_ textField: UITextField) {
+        celsiusLabel.text = textField.text
         
     }
 
