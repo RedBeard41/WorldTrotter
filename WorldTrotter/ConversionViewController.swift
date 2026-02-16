@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
@@ -54,6 +54,15 @@ class ConversionViewController: UIViewController {
         print("ConversionViewController loaded its view")
         
         updateCelsiusLabel( )
+        
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        print("Current text: \(String(describing: textField.text))")
+        print("Replacement text: \(string)")
+    
+        return true
         
     }
     
