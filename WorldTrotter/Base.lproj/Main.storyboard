@@ -15,12 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-m0-qcu">
-                                <rect key="frame" x="141" y="126" width="111" height="84"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlF-ad-LNg">
                                 <rect key="frame" x="139.66666666666666" y="269" width="114" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -46,27 +40,34 @@
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="value" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-8P-CtT">
+                                <rect key="frame" x="118.66666666666669" y="126" width="156" height="84"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="XxQ-m0-qcu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Al-W2-2Ex"/>
-                            <constraint firstItem="XxQ-m0-qcu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="6mq-i3-sM5"/>
-                            <constraint firstItem="XlF-ad-LNg" firstAttribute="centerX" secondItem="XxQ-m0-qcu" secondAttribute="centerX" id="Bgc-Tb-hbw"/>
+                            <constraint firstItem="zfs-cB-qfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hlz-fK-YAP"/>
+                            <constraint firstItem="hCV-8P-CtT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N1X-Yy-7UO"/>
                             <constraint firstItem="Ebp-Hn-TyF" firstAttribute="top" secondItem="Uub-SC-D8l" secondAttribute="bottom" constant="8" id="Oly-Dy-HpS"/>
-                            <constraint firstItem="zfs-cB-qfF" firstAttribute="centerX" secondItem="XxQ-m0-qcu" secondAttribute="centerX" id="QWc-lk-Cqc"/>
+                            <constraint firstItem="Uub-SC-D8l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGa-i1-SAZ"/>
+                            <constraint firstItem="zfs-cB-qfF" firstAttribute="top" secondItem="hCV-8P-CtT" secondAttribute="bottom" constant="8" id="Wm7-hO-TwN"/>
                             <constraint firstItem="XlF-ad-LNg" firstAttribute="top" secondItem="zfs-cB-qfF" secondAttribute="bottom" constant="8" id="anm-c4-ETX"/>
-                            <constraint firstItem="Ebp-Hn-TyF" firstAttribute="centerX" secondItem="XxQ-m0-qcu" secondAttribute="centerX" id="c2G-Z4-zmD"/>
-                            <constraint firstItem="Uub-SC-D8l" firstAttribute="centerX" secondItem="XxQ-m0-qcu" secondAttribute="centerX" id="flA-3I-d2T"/>
-                            <constraint firstItem="zfs-cB-qfF" firstAttribute="top" secondItem="XxQ-m0-qcu" secondAttribute="bottom" constant="8" id="mWJ-1H-AEP"/>
+                            <constraint firstItem="Ebp-Hn-TyF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gYF-JA-nq2"/>
+                            <constraint firstItem="hCV-8P-CtT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnt-wx-a1W"/>
                             <constraint firstItem="Uub-SC-D8l" firstAttribute="top" secondItem="XlF-ad-LNg" secondAttribute="bottom" constant="8" id="p8y-Ss-rwd"/>
+                            <constraint firstItem="hCV-8P-CtT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="q4y-NN-PjE"/>
+                            <constraint firstItem="XlF-ad-LNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wwc-Cb-7tM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Convert" image="thermometer" catalog="system" id="CcT-Jp-eNS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="-106"/>
+            <point key="canvasLocation" x="580.91603053435108" y="-106.33802816901409"/>
         </scene>
         <!--Map-->
         <scene sceneID="qdc-bW-1Cw">
